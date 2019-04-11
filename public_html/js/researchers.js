@@ -130,7 +130,7 @@ bootstrap_alert.warning = function(message) {
 
 function convertText2Marqdown( markdown, targetId )
 {
-	var req = $.post('http://a350803005bea11e9a30f064bd413d2e-100237436.us-east-2.elb.amazonaws.com:3002/api/design/survey', 
+	var req = $.post('a40edf0cc5c0e11e9a30f064bd413d2e-2074514822.us-east-2.elb.amazonaws.com:3002/api/design/survey', 
 			{markdown: markdown}
 		);
 
