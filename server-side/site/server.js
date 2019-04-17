@@ -48,12 +48,9 @@ app.post('/api/design/survey',
 			ansText = body.preview;
 			res.status(200).send( {preview: ansText} );
 			res.end();
+			return;
 	});
-	setTimeout(function() {
-   var text = marqdown.render( req.body.markdown );
-		console.log("ResponseSelf::"+text);
-		//res.send( {preview: ansText} );
-}, 500);
+	
 		
 		//res.send( {preview: text} );
 		//res.send({preview: 
