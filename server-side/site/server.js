@@ -42,11 +42,12 @@ app.post('/api/design/survey',
 			console.error(error);
 			return;
 		}
-		console.log("Response Body::"+body.preview);
+		console.log("ResponseBodyMicroService::"+body.preview);
 		console.log("Response::"+res.json());
-			res.send( {preview: body.preview} );
+			//res.send( {preview: body.preview} );
 	});
-		//var text = marqdown.render( req.body.markdown );
+		var text = marqdown.render( req.body.markdown );
+		console.log("ResponseSelf::"+text);
 		//res.send( {preview: text} );
 		//res.send({preview: 
 	}
