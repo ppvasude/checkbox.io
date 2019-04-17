@@ -46,12 +46,13 @@ app.post('/api/design/survey',
 		console.log("ResponseBodyMicroService::"+body.preview);
 		console.log("Response::"+res.json());
 			ansText = body.preview;
-			//res.send( {preview: ansText} );
+			res.status(200).send( {preview: ansText} );
+			res.end();
 	});
 	setTimeout(function() {
    var text = marqdown.render( req.body.markdown );
 		console.log("ResponseSelf::"+text);
-		res.send( {preview: ansText} );
+		//res.send( {preview: ansText} );
 }, 500);
 		
 		//res.send( {preview: text} );
