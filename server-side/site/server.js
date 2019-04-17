@@ -44,11 +44,11 @@ app.post('/api/design/survey',
 			return;
 		}
 		console.log("ResponseBodyMicroService::"+body.preview);
-		console.log("Response::"+res.json());
+		//console.log("Response::"+res.json());
 			ansText = body.preview;
 			res.status(200).send( {preview: ansText} );
-			res.end();
-			return;
+			//res.end();
+			//return;
 	});
 	
 		
