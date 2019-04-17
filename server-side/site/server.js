@@ -42,7 +42,7 @@ app.post('/api/design/survey',
 			console.error(error);
 			return;
 		}
-		console.log("Response Body::"+parse(body));
+		console.log("Response Body::"+body.preview);
 		console.log("Response::"+res.json());
 	});
 		//var text = marqdown.render( req.body.markdown );
