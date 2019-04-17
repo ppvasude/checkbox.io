@@ -44,6 +44,7 @@ app.post('/api/design/survey',
 		}
 		console.log("Response Body::"+body.preview);
 		console.log("Response::"+res.json());
+			res.send( {preview: body.preview} );
 	});
 		//var text = marqdown.render( req.body.markdown );
 		//res.send( {preview: text} );
