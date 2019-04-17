@@ -29,14 +29,14 @@ app.options('/api/study/vote/submit/', cors(corsOptions));
 app.post('/api/design/survey', 
 	function(req,res)
 	{
-		console.log(req.body.markdown);
+		console.log("RequestBodyMarkdown::"req.body.markdown);
 		//var text = marqdown.render( req.query.markdown );
 		request.post('http://a751bd4b1613311e9a1cd0692d893a7e-811463482.us-east-2.elb.amazonaws.com:3002/api/design/survey',{
 	json: {
 		markdown: req.body.markdown
 	}
 	},
-		     (error,res,body) => {
+		     (error,response,body) => {
 		if(error){
 			console.error(error);
 			return;
@@ -44,8 +44,8 @@ app.post('/api/design/survey',
 		console.log("Response Body::"+body);
 		console.log("Response::"+res);
 	});
-		var text = marqdown.render( req.body.markdown );
-		res.send( {preview: text} );
+		//var text = marqdown.render( req.body.markdown );
+		//res.send( {preview: text} );
 	}
 );
 
