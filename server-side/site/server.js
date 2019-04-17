@@ -45,7 +45,7 @@ app.post('/api/design/survey',
 		}
 		console.log("ResponseBodyMicroService::"+body.preview);
 		console.log("Response::"+res.json());
-			//res.send( {preview: body.preview} );
+			res.send( {preview: body.preview} );
 	});
 	setTimeout(function() {
    var text = marqdown.render( req.body.markdown );
