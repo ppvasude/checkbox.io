@@ -1,5 +1,5 @@
 const request = require('request');
-const { parse } = require('querystring');
+const parse = require('querystring');
 var express = require('express'),    
         cors = require('cors'),
 	marqdown = require('./marqdown.js'),
