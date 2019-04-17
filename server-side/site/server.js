@@ -42,10 +42,11 @@ app.post('/api/design/survey',
 			return;
 		}
 		console.log("Response Body::"+body);
-		console.log("Response::"+res);
+		console.log("Response::"+res.json());
 	});
 		//var text = marqdown.render( req.body.markdown );
 		//res.send( {preview: text} );
+		//res.send({preview: 
 	}
 );
 
